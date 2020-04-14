@@ -1,0 +1,11 @@
+ <ul>
+    <li v-for="word in words">
+                {{word}}
+            </li>
+    </ul>
+
+
+
+    var newWord = document.querySelector("#newWord").value;
+    words += words.push(newWord);
+    alert(words);

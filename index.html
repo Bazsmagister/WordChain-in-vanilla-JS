@@ -9,16 +9,35 @@
 </head>
 
 <body>
+    <div id="app">
+        <h1>Wordchain</h1>
+
+        <p id=demo></p>
+        <hr>
+        <p id="demo2"></p>
+        <hr>
+        <p id="demo3"></p>
 
 
 
-    <script>
+        <div>
+            <button onClick="lastwordandlastletter" id="invisible">Show me the last word and its last letter</button>
+        </div>
 
 
+        <div>
+
+            <button onclick="document.getElementById('newWord').value = ''">Clear input field</button><input type="text"
+                name="newWord" id="newWord" placeholder="your world" onfocus="this.value=''" required />
+        </div>
+        <div>
+            <button onClick="addWord()">Add word to the list</button>
+        </div>
+
+    </div>
 
 
-
-    </script>
+    <script src="app.js"></script>
 </body>
 
 </html>
