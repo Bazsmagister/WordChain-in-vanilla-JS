@@ -29,7 +29,7 @@ var words = [
 //console.log(words);
 //alert(words);
 
-//
+//I hide the button as long the method is not ready.
 document.getElementById("invisible").style.display = "none";
 //************ */
 var txt = "";
@@ -71,8 +71,6 @@ function addWord() {
 
     //alert(words[words.length - 1]);
 
-
-
     var text, fLen, i;
 
     fLen = words.length;
@@ -87,6 +85,7 @@ function addWord() {
 
     //this.newWord = "";
     //return this.words;
+
     //alert the last element of the array:
     //alert(this.words[this.words.length - 1]);
 
@@ -96,6 +95,38 @@ function addWord() {
 
 }
 
-newWord = "";
+//newWord = "";
 
 //************* */
+
+function lastwordandlastletter() {
+    var lastword = words[words.length - 1];
+    alert(lastword);
+
+    var lastletter = lastword.charAt(lastword.length - 1);
+    alert(lastletter);
+
+    var text, wLen, i;
+
+    wLen = words.length;
+
+    /*
+    var wordsinlowercase = [];
+    wordsinlowercase = words.toLowerCase();
+    alert(wordsinlowercase);
+    */
+    var wordsinlowercase = [];
+    for (i = 0; i < wLen; i++) {
+
+        wordsinlowercase.push(words[i].toLowerCase());
+        // words[i].charAt(0).toLowerCase();
+        if (wordsinlowercase[i].charAt(0) == lastletter) {
+            alert(wordsinlowercase[i]);
+
+        }
+
+    }
+    console.log(wordsinlowercase);
+
+
+}
