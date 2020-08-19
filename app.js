@@ -37,7 +37,7 @@ var txt = "";
 words.forEach(myFunction);
 
 function myFunction(value) {
-    txt = txt + value + "  I   ";
+    txt = txt + value + "     ";
     document.getElementById("demo").innerHTML = txt;
 }
 
@@ -60,7 +60,7 @@ function addWord() {
     //this.words += this.words.push(this.newWord);
 
     //let newWord = document.querySelector('#newWord').value;
-    let newWord = document.getElementById('newWord').value;
+    let newWord = document.getElementById("newWord").value;
 
     //alert(newWord);
 
@@ -82,7 +82,6 @@ function addWord() {
     text += "</ul>";
     document.getElementById("demo2").innerHTML = text;
 
-
     //this.newWord = "";
     //return this.words;
 
@@ -92,7 +91,6 @@ function addWord() {
     //alert(words);
     //document.getElementById("demo3").innerHTML = addWord();
     //return words;
-
 }
 
 //newWord = "";
@@ -117,16 +115,11 @@ function lastwordandlastletter() {
     */
     var wordsinlowercase = [];
     for (i = 0; i < wLen; i++) {
-
         wordsinlowercase.push(words[i].toLowerCase());
         // words[i].charAt(0).toLowerCase();
         if (wordsinlowercase[i].charAt(0) == lastletter) {
             alert(wordsinlowercase[i]);
-
         }
-
     }
     console.log(wordsinlowercase);
-
-
 }
